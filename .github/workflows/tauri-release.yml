@@ -4,7 +4,20 @@ on:
     branches:
       - main
       - master
-
+  workflow_dispatch: 
+    inputs:
+      version:
+        description: 'Version to release'
+        required: true
+        default: '0.1.0'
+      prerelease:
+        description: 'Is this a pre-release?'
+        required: false
+        default: 'false'
+      tagName:
+        description: 'Tag name for the release'
+        required: false
+        default: 'app-v__VERSION__' # The action automatically replaces __VERSION__ with the app version.
 jobs:
   publishtauri:
     permissions:
