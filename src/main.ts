@@ -78,6 +78,7 @@ window.addEventListener("DOMContentLoaded",()=> {
       const btnDownloadRecording = document.getElementById("btnDownloadRecording") as HTMLButtonElement;
       btnStoprecording.disabled = true;
       btnDownloadRecording.disabled = true;
+      
       btnStartrecording.addEventListener("click", async () => {
         await startRecording();
         btnStartrecording.disabled = true;
