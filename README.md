@@ -1,7 +1,6 @@
-# Tauri + Vanilla TS
+# Recorder app
 
-This template should help get you started developing with Tauri in vanilla HTML, CSS and Typescript.
+An app capable of recording the audio of any screen on your computer . Just click on share audio.
+When you are done recording click on stop recording and download recording to get the file.
 
-## Recommended IDE Setup
 
-- [VS Code](https://code.visualstudio.com/) + [Tauri](https://marketplace.visualstudio.com/items?itemName=tauri-apps.tauri-vscode) + [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer)
