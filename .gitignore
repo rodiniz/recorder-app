@@ -23,3 +23,5 @@ dist-ssr
 *.sln
 *.sw?
 .vscode
+__azurite_db_table__.json
+AzuriteConfig
