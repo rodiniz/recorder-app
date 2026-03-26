@@ -78,9 +78,22 @@ button:active {
   border-color: #396cd8;
   background-color: #e8e8e8;
 }
- button:disabled {
-  opacity: 0.5;
-  cursor: not-allowed;  
+button:disabled {
+  color: #6b7280;
+  background-color: #d1d5db;
+  border-color: #9ca3af;
+  opacity: 1;
+  cursor: not-allowed;
+}
+
+ui-button[disabled]::part(button),
+ui-button[disabled]::part(button):hover,
+ui-button[disabled]::part(button):active {
+  color: #6b7280;
+  background-color: #d1d5db;
+  border-color: #9ca3af;
+  opacity: 1;
+  cursor: not-allowed;
 }
 
 input,
@@ -109,5 +122,21 @@ button {
   }
   button:active {
     background-color: #0f0f0f69;
+  }
+
+  button:disabled {
+    color: #9ca3af;
+    background-color: #4b5563;
+    border-color: #6b7280;
+    opacity: 1;
+  }
+
+  ui-button[disabled]::part(button),
+  ui-button[disabled]::part(button):hover,
+  ui-button[disabled]::part(button):active {
+    color: #d1d5db;
+    background-color: #4b5563;
+    border-color: #6b7280;
+    opacity: 1;
   }
 }

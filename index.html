@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tauri App</title>
     <script type="module" src="/src/main.ts" defer></script>
+
   </head>
 
   <body>
@@ -13,11 +14,11 @@
       <h1>Screen Audio Recorder</h1>
 
       <div class="row">
-        <button id="btnStartrecording">Start recording</button>
-        <button id="btnStoprecording" style="margin-left: 10px;">Stop recording</button>
-        <button id="btnDownloadRecording"  style="margin-left: 10px;">Download recording</button>
+        <ui-button icon="mic" id="btnStartrecording">Start recording</ui-button>
+        <ui-button icon="stop-circle" id="btnStoprecording" style="margin-left: 10px;">Stop recording</ui-button>
+        <ui-button icon="download" id="btnDownloadRecording"  style="margin-left: 10px;">Download recording</ui-button>
       </div>
-      <div id="transcripts" class="transcripts"></div>
+     
     </main>
   </body>
 </html>

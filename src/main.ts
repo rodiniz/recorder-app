@@ -1,4 +1,8 @@
 
+import '@diniz/webcomponents/style.css'; 
+import { applyTheme, UIButton } from '@diniz/webcomponents';
+
+applyTheme('shadcn');
 
 let mediaRecorder: MediaRecorder | null = null;
 let mixedStream: MediaStream | null = null;
@@ -73,9 +77,10 @@ async function downloadRecording() {
 
 window.addEventListener("DOMContentLoaded",()=> {
  
-      const btnStartrecording= document.getElementById("btnStartrecording") as HTMLButtonElement;
-      const btnStoprecording = document.getElementById("btnStoprecording") as HTMLButtonElement;  
-      const btnDownloadRecording = document.getElementById("btnDownloadRecording") as HTMLButtonElement;
+      const btnStartrecording= document.getElementById("btnStartrecording") as UIButton;
+      const btnStoprecording = document.getElementById("btnStoprecording") as UIButton;  
+      const btnDownloadRecording = document.getElementById("btnDownloadRecording") as UIButton;
+     
       btnStoprecording.disabled = true;
       btnDownloadRecording.disabled = true;
       
